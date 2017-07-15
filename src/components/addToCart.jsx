@@ -24,10 +24,11 @@ const AddToCart = ({
   };
   return (
     <button
+      className='rc_tc'
       style={ style }
       onClick={ handleClick }
     >
-      <span>
+      <span className='rc_atc__txt'>
         Add to Cart
       </span>
     </button>

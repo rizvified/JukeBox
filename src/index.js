@@ -1,5 +1,7 @@
-import Cart from './components/Cart';
+import AddToCart from './components/addToCart.jsx';
+import Summary from './components/summary.jsx';
 
 export {
-  Cart,
+  AddToCart,
+  Summary,
 };
