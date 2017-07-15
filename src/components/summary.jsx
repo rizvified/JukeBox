@@ -63,11 +63,15 @@ const Summary = ({
       style={ style }
     >
       <div className='rc_smry__details'>
-        {
-              items > 1 ? `${items} items` : `${items} item`
-            }
+        <span className='rc_smry__icount'>
+          {
+            items > 1 ? `${items} Items` : `${items} Item`
+          }
+        </span>
         <br />
-        { convertCurr }
+        <span className='rc_smry__amount'>
+          { convertCurr }
+        </span>
       </div>
     </div>
   );
