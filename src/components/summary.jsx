@@ -2,14 +2,10 @@ import React from 'react';
 import { arrayOf, object, string } from 'prop-types';
 import CurrencyInput from 'react-currency-input';
 
-const sumStyles = {
-
-};
-
 const Summary = ({
   selected,
   currency = 'usd',
-  style = sumStyles,
+  style,
 }) => {
   const items = selected.length;
   const totalCost = selected.reduce((total, item) => {

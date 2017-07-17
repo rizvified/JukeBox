@@ -9,15 +9,6 @@ describe('AddToCart', () => {
   const name = 'sample';
   const price = 699;
   const cb = jest.fn();
-  const bstyles = {
-    padding: '5px 10px',
-    lineHeight: '1.5',
-    fontSize: '12px',
-    borderRadius: '0',
-    color: '#fff',
-    backgroundColor: '#008cba',
-    borderColor: '#0079a1',
-  };
 
   it('renders without exploding', () => {
     ReactTestUtils.renderIntoDocument(
@@ -32,12 +23,6 @@ describe('AddToCart', () => {
     expect(wrapper.find('button')).toHaveLength(1);
   });
 
-  it('allows us to set style', () => {
-    const wrapper = mount(
-      <AddToCart id={ id } name={ name } price={ price } cb={ cb } style={ bstyles } />,
-    );
-    expect(wrapper.prop('style')).toEqual(bstyles);
-  });
 
   it('simulates a click on button', () => {
     const wrapper = shallow(
